@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/shopping"
+            android:title="@string/offers" />
+    </group>
+
+    <item android:title="@string/others">
+        <menu>
+            <item
+                android:id="@+id/nav_change_api_data"
+                android:icon="@drawable/key_change"
+                android:title="Change Api Data" />
+            <item
+                android:id="@+id/nav_setings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

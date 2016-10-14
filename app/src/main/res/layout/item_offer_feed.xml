@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!--    <LinearLayout
+            android:id="@+id/linearLayout_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView_userprofile_feed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/account" />
+
+            <TextView
+                android:id="@+id/textView_username_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:textColor="@color/primary_text"
+                android:text="@string/user_info_string" />
+
+            <TextView
+                android:id="@+id/textView_post_item_timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:textColor="@color/secondary_text"
+                tools:text="10 min ago" />
+
+        </LinearLayout>
+-->
+        <com.adonisarifi.fybermobileofferapi.util.ImageViewFit
+            android:id="@+id/imageView_feed"
+            tools:background="@drawable/dash_square"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_image_height"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/textView_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView_feed"
+            android:layout_marginLeft="@dimen/md_keylines"
+            android:layout_marginTop="@dimen/md_keylines"
+            android:singleLine="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            tools:text="@string/offer_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView_description"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+
+            <ImageView
+                android:id="@+id/imageView_like"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                />
+
+            <TextView
+                android:id="@+id/textView_number_of_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:gravity="bottom"
+                android:text="180"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <ImageView
+                android:id="@+id/imageView_comments"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+          />
+
+            <TextView
+                android:id="@+id/textView_number_of_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:gravity="bottom"
+                android:text="20"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <ImageButton
+                android:id="@+id/imageView_share"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+               />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
