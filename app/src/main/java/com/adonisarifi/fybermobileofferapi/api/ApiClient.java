@@ -60,7 +60,7 @@ public class ApiClient implements Interceptor {
         OkHttpClient client = okhttpClient.build();
 
 
-        Retrofit retrofit = new Retrofit.Builder()
+     retrofit = new Retrofit.Builder()
                 .baseUrl(Constants.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
