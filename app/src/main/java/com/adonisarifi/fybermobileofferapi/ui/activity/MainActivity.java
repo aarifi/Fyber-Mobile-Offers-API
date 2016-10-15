@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
     @Bind(R.id.textView_comments_empty)
     TextView textView_comments_empty;
 
-    private OfferAdapter offerAdapter;
+    public OfferAdapter offerAdapter;
 
     private ProgressDialog progressDialog;
 

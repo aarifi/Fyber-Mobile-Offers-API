@@ -104,10 +104,7 @@ public class InputApiDataActivity extends AppCompatActivity implements RequestCo
     public void initControls() {
         requestPresenter = new RequestPresenter(this, this);
         //TODO Cleare before send to Fyber for review
-        edittext_input_appid.setText(Constants.APP_ID);
-        edittext_input_uid.setText(Constants.UID);
-        edittext_input_apikey.setText(Constants.API_KEY);
-        edittext_input_pub0.setText(Constants.Pub0);
+
 
     }
 
